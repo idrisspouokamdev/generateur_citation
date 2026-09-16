@@ -1,0 +1,623 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root {
+
+    --primary: #2563eb;
+
+    --primary-dark: #1d4ed8;
+
+    --secondary: #64748b;
+
+    --whatsapp: #25d366;
+
+    --whatsapp-dark: #1ebe5d;
+
+    --dark: #0f172a;
+
+    --text: #334155;
+
+    --muted: #64748b;
+
+    --background: #eef4ff;
+
+    --white: #ffffff;
+
+    --border: #e2e8f0;
+
+    --shadow:
+        0 20px 50px
+        rgba(15, 23, 42, 0.12);
+
+    --radius: 20px;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #f8fafc
+        );
+
+    min-height: 100vh;
+
+}
+
+
+/* ==========================================
+   APPLICATION
+========================================== */
+
+.app {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 850px;
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+/*.icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin:
+        0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--white);
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+    box-shadow: var(--shadow);
+
+}*/
+
+
+.header h1 {
+
+    color: var(--dark);
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.header p {
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+}
+
+
+/* ==========================================
+   QUOTE CARD
+========================================== */
+
+.quote-card {
+
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    padding: 55px 50px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Barre supérieure */
+
+.quote-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            #60a5fa
+        );
+
+}
+
+
+/* ==========================================
+   GUILLEMET
+========================================== */
+
+.quote-icon {
+
+    color: var(--primary);
+
+    font-size: 80px;
+
+    line-height: 0.5;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==========================================
+   CITATION
+========================================== */
+
+blockquote {
+
+    color: var(--dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 28px;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+}
+
+
+/* ==========================================
+   AUTEUR
+========================================== */
+
+.author {
+
+    margin-top: 25px;
+
+    color: var(--primary);
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   SEPARATEUR
+========================================== */
+
+.separator {
+
+    width: 80px;
+
+    height: 3px;
+
+    background: var(--primary);
+
+    margin:
+        30px auto;
+
+    border-radius: 10px;
+
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* ==========================================
+   BOUTONS
+========================================== */
+
+.btn {
+
+    border: none;
+
+    padding:
+        13px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.12);
+
+}
+
+
+.btn:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* Bouton principal */
+
+.btn-primary {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+}
+
+
+.btn-primary:hover {
+
+    background:
+        var(--primary-dark);
+
+}
+
+
+/* Bouton copier */
+
+.btn-secondary {
+
+    background: #e2e8f0;
+
+    color: var(--dark);
+
+}
+
+
+.btn-secondary:hover {
+
+    background: #cbd5e1;
+
+}
+
+
+/* WhatsApp */
+
+.btn-whatsapp {
+
+    background: var(--whatsapp);
+
+    color: var(--white);
+
+}
+
+
+.btn-whatsapp:hover {
+
+    background:
+        var(--whatsapp-dark);
+
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+
+    min-height: 25px;
+
+    margin-top: 20px;
+
+    color: var(--whatsapp);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   COMPTEUR
+========================================== */
+
+.counter {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
+
+.counter span {
+
+    color: var(--primary);
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+.footer strong {
+
+    color: var(--primary);
+
+}
+
+
+/* ==========================================
+   ANIMATION CITATION
+========================================== */
+
+.quote-animation {
+
+    animation:
+        apparition 0.5s ease;
+
+}
+
+
+@keyframes apparition {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE TABLETTE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .quote-card {
+
+        padding:
+            45px 30px;
+
+    }
+
+
+    blockquote {
+
+        font-size: 24px;
+
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE MOBILE
+========================================== */
+
+@media (max-width: 500px) {
+
+    .app {
+
+        padding:
+            20px 15px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .quote-card {
+
+        padding:
+            40px 20px;
+
+    }
+
+
+    .quote-icon {
+
+        font-size: 65px;
+
+    }
+
+
+    blockquote {
+
+        font-size: 21px;
+
+    }
+
+
+    .author {
+
+        font-size: 16px;
+
+    }
+
+
+    .actions {
+
+        flex-direction: column;
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+}

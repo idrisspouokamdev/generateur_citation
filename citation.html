@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Générateur de citations développé avec HTML5, CSS3 et JavaScript">
+
+    <title>Générateur de Citations</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==============================
+         APPLICATION
+    =============================== -->
+
+    <main class="app">
+
+        <div class="container">
+
+            <!-- En-tête -->
+
+            <header class="header">
+
+                <div class="icon">
+                </div>
+
+                <h1>
+                    Générateur de citations
+                </h1>
+
+                <p>
+                    Une pensée inspirante pour chaque moment.
+                </p>
+
+            </header>
+
+
+            <!-- Carte principale -->
+
+            <section class="quote-card">
+
+                <div class="quote-icon">
+                    “
+                </div>
+
+
+                <!-- Citation -->
+
+                <blockquote id="citation">
+
+                    Le succès est la somme de
+                    petits efforts répétés jour après jour.
+
+                </blockquote>
+
+
+                <!-- Auteur -->
+
+                <p class="author"
+                   id="auteur">
+
+                    — Robert Collier
+
+                </p>
+
+
+                <!-- Séparateur -->
+
+                <div class="separator"></div>
+
+
+                <!-- Actions -->
+
+                <div class="actions">
+
+                    <!-- Nouvelle citation -->
+
+                    <button
+                        id="nouvelleCitation"
+                        class="btn btn-primary">
+
+                        <span>Nouvelle citation</span>
+
+                    </button>
+
+
+                    <!-- Copier -->
+
+                    <button
+                        id="copier"
+                        class="btn btn-secondary">
+                        <span>Copier</span>
+
+                    </button>
+
+
+                    <!-- WhatsApp -->
+
+                    <button
+                        id="whatsapp"
+                        class="btn btn-whatsapp">
+
+                        <span>WhatsApp</span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div
+                    id="message"
+                    class="message">
+                </div>
+
+            </section>
+
+
+            <!-- Compteur -->
+
+            <p class="counter">
+
+                Citation
+                <span id="numeroCitation">1</span>
+
+                /
+                <span id="totalCitations">0</span>
+
+            </p>
+
+
+            <!-- Footer -->
+
+            <footer class="footer">
+
+                <p>
+                    Projet réalisé avec
+                    <strong>HTML5</strong>,
+                    <strong>CSS3</strong> et
+                    <strong>JavaScript</strong>.
+                </p>
+
+                <p>
+                    CLIC Bayangam — Session 2026
+                </p>
+
+            </footer>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="App.js"></script>
+
+</body>
+
+</html>
